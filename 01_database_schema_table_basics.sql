@@ -2,7 +2,7 @@
    File    : 01_database_schema_table_basics.sql
    Purpose : Create a database, schema and table; insert, view, update
              and delete records; and clean up
-   Author  : Your Name
+   Author  : Surya Teja N
    Created : 2026-11-06
    Notes   : Run top to bottom. The cleanup section at the end is
              commented out on purpose, so it never runs by accident.
@@ -10,14 +10,7 @@
 
 
 -- ---------------------------------------------------------------------
--- 1. SET CONTEXT (make sure objects are created where you expect)
--- ---------------------------------------------------------------------
--- USE ROLE SYSADMIN;            -- uncomment if you work with specific roles
--- USE WAREHOUSE <your_warehouse>;  -- a running warehouse is needed for INSERT/SELECT
-
-
--- ---------------------------------------------------------------------
--- 2. CREATE DATABASE AND SCHEMA
+-- 1. CREATE DATABASE AND SCHEMA
 -- ---------------------------------------------------------------------
 -- IF NOT EXISTS lets you re-run the script without errors
 CREATE DATABASE IF NOT EXISTS LEARNING;
@@ -29,7 +22,7 @@ USE SCHEMA LEARNING_SCHEMA;
 
 
 -- ---------------------------------------------------------------------
--- 3. CREATE TABLE
+-- 1. CREATE TABLE
 -- ---------------------------------------------------------------------
 CREATE TABLE IF NOT EXISTS LEARNING.LEARNING_SCHEMA.EMPLOYEE (
     Empid     INT,
@@ -40,7 +33,7 @@ CREATE TABLE IF NOT EXISTS LEARNING.LEARNING_SCHEMA.EMPLOYEE (
 
 
 -- ---------------------------------------------------------------------
--- 4. INSPECT OBJECTS
+-- 3. INSPECT OBJECTS
 -- ---------------------------------------------------------------------
 -- List all tables in the current schema (owner, rows, size, retention)
 SHOW TABLES;
@@ -53,7 +46,7 @@ SELECT GET_DDL('TABLE', 'LEARNING.LEARNING_SCHEMA.EMPLOYEE');
 
 
 -- ---------------------------------------------------------------------
--- 5. INSERT RECORDS
+-- 4. INSERT RECORDS
 -- ---------------------------------------------------------------------
 -- Insert multiple records in one statement
 -- Note: PhnNumber is VARCHAR, so phone numbers are written as text
@@ -70,7 +63,7 @@ VALUES (6, 'Naveen', 'Hyderabad', '7878787878');
 
 
 -- ---------------------------------------------------------------------
--- 6. VERIFY THE DATA
+-- 5. VERIFY THE DATA
 -- ---------------------------------------------------------------------
 SELECT * FROM EMPLOYEE ORDER BY Empid;
 
@@ -81,7 +74,7 @@ SELECT * FROM EMPLOYEE WHERE Address = 'Hyderabad';
 
 
 -- ---------------------------------------------------------------------
--- 7. UPDATE AND DELETE (always use a WHERE clause)
+-- 6. UPDATE AND DELETE (always use a WHERE clause)
 -- ---------------------------------------------------------------------
 -- Change the address of one employee
 UPDATE EMPLOYEE
@@ -94,7 +87,7 @@ WHERE Empid = 6;
 
 
 -- ---------------------------------------------------------------------
--- 8. CLEANUP (commented out; run one statement at a time when needed)
+-- 7. CLEANUP (run one statement at a time when needed)
 -- ---------------------------------------------------------------------
 -- DELETE vs TRUNCATE vs DROP:
 --   DELETE   : removes selected rows (can use WHERE); structure stays
