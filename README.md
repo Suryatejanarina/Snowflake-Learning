@@ -3,15 +3,6 @@ My Snowflake SQL practice scripts
 
 # Snowflake Learning
 
-SQL scripts from my Snowflake training, organized by topic.
-
-## Files
-
-| File | Topic |
-|---|---|
-| 01_database_schema_table_basics.sql | Database, schema, table, and basic DML (insert, update, delete) |
-# Snowflake Learning
-
 My Snowflake SQL practice scripts from my training, organized by topic. Each script has comments explaining the concept, so it can double as a quick revision guide.
 
 ## Files
