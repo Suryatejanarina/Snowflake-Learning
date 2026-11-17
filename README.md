@@ -1,6 +1,3 @@
-# Snowflake-Learning
-My Snowflake SQL practice scripts
-
 # Snowflake Learning
 
 My Snowflake SQL practice scripts from my training, organized by topic. Each script has comments explaining the concept, so it can double as a quick revision guide.
