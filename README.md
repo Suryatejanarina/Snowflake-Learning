@@ -6,7 +6,7 @@ My Snowflake SQL practice scripts from my training, organized by topic. Each scr
 
 | File | Topic |
 |---|---|
-| 01_Database_Cchema_Table_basics.sql | Database, schema, table, and basic DML (insert, update, delete) |
+| 01_Database_Schema_Table_basics.sql | Database, schema, table, and basic DML (insert, update, delete) |
 | 02_File_Formats.sql | File formats: creating and using file formats for loading data |
 | 03_Table_Types.sql | Table types: Permanent, Transient, Temporary, and External |
 | 04_Stages.sql | Stages: User, Table, Named Internal, and External |
