@@ -6,11 +6,11 @@ My Snowflake SQL practice scripts from my training, organized by topic. Each scr
 
 | File | Topic |
 |---|---|
-| 01_database_schema_table_basics.sql | Database, schema, table, and basic DML (insert, update, delete) |
-| 02_file_formats.sql | File formats: creating and using file formats for loading data |
-| 03_table_types.sql | Table types: Permanent, Transient, Temporary, and External |
-| 04_stages.sql | Stages: User, Table, Named Internal, and External |
-| 05_copy_into.sql | COPY INTO: loading, unloading, COPY FILES, and Storage Integration |
+| 01_Database_Cchema_Table_basics.sql | Database, schema, table, and basic DML (insert, update, delete) |
+| 02_File_Formats.sql | File formats: creating and using file formats for loading data |
+| 03_Table_Types.sql | Table types: Permanent, Transient, Temporary, and External |
+| 04_Stages.sql | Stages: User, Table, Named Internal, and External |
+| 05_Copy_Into.sql | COPY INTO: loading, unloading, COPY FILES, and Storage Integration |
 | 06_Snowpipe.sql |  Snowpipe : Creating Snowpipe and Notification_Integration |
 
 
