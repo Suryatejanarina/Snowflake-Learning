@@ -11,6 +11,7 @@ My Snowflake SQL practice scripts from my training, organized by topic. Each scr
 | 03_table_types.sql | Table types: Permanent, Transient, Temporary, and External |
 | 04_stages.sql | Stages: User, Table, Named Internal, and External |
 | 05_copy_into.sql | COPY INTO: loading, unloading, COPY FILES, and Storage Integration |
+| 06_Snowpipe.sql |  Snowpipe : Creating Snowpipe and Notification_Integration |
 
 
 ## How to use
